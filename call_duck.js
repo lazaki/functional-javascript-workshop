@@ -1,5 +1,5 @@
-  function duckCount() {
+function duckCount() {
 
-    }
+}
 
-    module.exports = duckCount
+module.exports = duckCount

@@ -1,3 +1,3 @@
- module.exports = function(namespace) {
-      // SOLUTION GOES HERE
-    }
+module.exports = function (namespace) {
+    return console.log.bind(null,namespace);
+}

@@ -1,6 +1,6 @@
 function logger(namespace) {
   return function(...params) {
-    console.log.apply(console, [namespace].concat(params))
+    console.log.apply(console.log, [namespace].concat(params))
   }
 }
 

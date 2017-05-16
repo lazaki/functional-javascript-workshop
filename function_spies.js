@@ -1,12 +1,14 @@
 function Spy(target, method) {
-    result = {count: 0};   
-    var fn = target[method];
-
-    target[method] = function () {
-        result.count ++;
-        return fn.apply(this, arguments);
+    // SOLUTION GOES HERE
+    var fn = target[method]
+    var obj = {
+        count: 0
     }
-    return result;
+    target[method] = function() {
+        obj.count ++;
+        return fn.apply(null,arguments);
+    }
+    return obj;
 }
 
 module.exports = Spy
